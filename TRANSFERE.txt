@@ -1,5 +1,5 @@
-Necessidade de Transferência Armazém para CO
-produtos    QtCO        QtMin       QtVendas    Estq.após Vendas    Necess.     Transf.de Arm p/ CO
+Necessidade de TransferÃªncia ArmazÃ©m para CO
+produtos    QtCO        QtMin       QtVendas    Estq.apÃ³s Vendas    Necess.     Transf.de Arm p/ CO
 16320        344          200            128                  216          0                       0
 23400       1435          500            937                  498          2                      10
 26440       2899          800            239                 2660          0                       0
