@@ -52,7 +52,7 @@ def calcular_transferencia(produtos, vendas):
 
 
 def criar_arquivo_transferencia(dados_transferencia):
-  with open('TRANSFERE.txt', 'w', encoding='utf-8') as arquivo:
+  with open('relatorios/TRANSFERE.txt', 'w', encoding='utf-8') as arquivo:
     dados_ordenados = dict(sorted(dados_transferencia.items()))
     arquivo.write('Necessidade de Transferência Armazém para CO\n')
     arquivo.write(f'{'produtos':<12}{'QtCO':<12}{'QtMin':<12}{'QtVendas':<12}{'Estq.após Vendas':<20}{'Necess.':<12}{'Transf.de Arm p/ CO':<12}\n')
@@ -63,7 +63,7 @@ def criar_arquivo_transferencia(dados_transferencia):
 
 
 def criar_relatorio_divergentes(divergentes):
-  with open('DIVERGENCIAS.txt', 'w', encoding='utf-8') as arquivo:
+  with open('relatorios/DIVERGENCIAS.txt', 'w', encoding='utf-8') as arquivo:
     for linha, item in divergentes.items():
       if len(item) == 5:
         texto = f'Código de Produto não encontrado {item}'
@@ -76,7 +76,7 @@ def criar_relatorio_divergentes(divergentes):
 
 
 def criar_relatorio_vendas_por_canal(vendas_por_canal):
-  with open('TOTCANAL.txt', 'w', encoding='utf-8') as arquivo:
+  with open('relatorios/TOTCANAL.txt', 'w', encoding='utf-8') as arquivo:
     arquivo.write('Quantidade de Vendas por canal\n')
     arquivo.write(f'{'Canal':<25} {'QtVendas':>10}\n')
     vendas_ordenadas = dict(sorted(vendas_por_canal.items()))
